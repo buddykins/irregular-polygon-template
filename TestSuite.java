@@ -34,7 +34,7 @@ public class TestSuite {
     {
         IrregularPolygon poly = new IrregularPolygon();
         for (double[] point : points)
-        {
+        { //keep note of this
             //System.out.println("  Adding point: " + Arrays.toString(point));
             poly.add(new Point2D.Double(point[0], point[1]));
         }

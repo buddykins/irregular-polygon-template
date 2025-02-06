@@ -12,9 +12,10 @@ public class IrregularPolygon {
     public IrregularPolygon() {}
 
     // public methods
-    public void add(Point2D.Double aPoint)
+    public void add(Point2D.Double aPoint) // "irregularPolygon.add(Double)" so it's a single double value that gets added, im assuming it can be x or y
     {
         // TODO: Add a point to the IrregularPolygon.
+       poly.setLocation(aPoint);
     }
 
     public double perimeter() {
