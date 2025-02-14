@@ -36,7 +36,8 @@ public class TestSuite {
         for (double[] point : points)
         { //keep note of this
             //System.out.println("  Adding point: " + Arrays.toString(point));
-            poly.add(new Point2D.Double(point[0], point[1]));
+            poly.add(new Point2D.Double(point[0], point[1])); // point[0], point[1] seem to make the point 0,1. how would i add this to a shape?
+            // the .add is what im trying to make, and it seems to almost make a whole new point2d, i wonder if i could point2d.clone itself plus the new point
         }
         poly.draw();
 

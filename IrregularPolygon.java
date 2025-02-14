@@ -12,10 +12,12 @@ public class IrregularPolygon {
     public IrregularPolygon() {}
 
     // public methods
-    public void add(Point2D.Double aPoint) // "irregularPolygon.add(Double)" so it's a single double value that gets added, im assuming it can be x or y
+    public void add(Point2D.Double aPoint) // "irregularPolygon.add(Double)" so it's a single double value that gets added, im assuming it's both
+    //my main question though is about the object itself, what object am i trying to add too? as poly cannot be accsesed 
     {
         // TODO: Add a point to the IrregularPolygon.
-       poly.setLocation(aPoint);
+        myPolygon.add(aPoint);
+       
     }
 
     public double perimeter() {
